@@ -1,0 +1,7 @@
+
+# Ignore docker enivronment files
+.env 
+
+# Ignore Minecraft specific
+minecraft/ops.json
+minecraft/whitelist.json

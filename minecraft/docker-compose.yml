@@ -1,0 +1,17 @@
+version: '3'
+services:
+    minecraft:
+        image: dafriedmann/minecraft-server
+        container_name: mcserver
+        restart: unless-stopped
+        environment:
+            - EULA=true
+            - MAX_MEMORY=4096m
+            - MIN_MEMORY=2048m
+        ports:
+            - 25565:25565
+        volumes: 
+            - mcserver-data:/minecraft/data
+
+volumes:
+    mcserver-data:
